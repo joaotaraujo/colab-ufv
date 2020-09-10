@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/* CSS Document */
+
+//style das tables
+body {
+    background: #fafafa url(http://jackrugile.com/images/misc/noise-diagonal.png);
+    color: #444;
+}
+
+strong {
+        font-weight: bold; 
+}
+
+em {
+        font-style: italic; 
+}
+
+table {
+        background: #E4E5EC;
+        border-collapse: separate;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: left;
+        width: 710px;
+}	
+
+th {
+        background: #BCC5FF;
+        border-left: 1px solid #555;
+        border-right: 1px solid #777;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #333;
+        color: #000000;
+        font-weight: bold;
+        padding: 10px 15px;
+        position: relative;
+}
+
+th:after {
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+        content: '';
+        display: block;
+        height: 25%;
+        left: 0;
+        margin: 1px 0 0 0;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+}
+
+th:first-child {
+        border-left: 1px solid #777;	
+}
+
+th:last-child {
+}
+
+td {
+        border-right: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 300ms;
+}
+
+td:first-child {
+}	
+
+td:last-child {
+        border-right: 1px solid #e8e8e8;
+}	
+
+tr {
+        background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+        background: #E6E6E6 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+}
+
+tr:last-of-type td:first-child {
+}	
+
+tr:last-of-type td:last-child {
+}	
+
+tbody:hover td {
+}
+
+tbody:hover tr:hover td {
+}
+        
+        
+//style dos buttons
+
+button:hover {
+  background: #999CFF;
+  background-image: -webkit-linear-gradient(top, #7a1717, #f70d0d);
+  background-image: -moz-linear-gradient(top, #7a1717, #f70d0d);
+  background-image: -ms-linear-gradient(top, #7a1717, #f70d0d);
+  background-image: -o-linear-gradient(top, #7a1717, #f70d0d);
+  text-decoration: none;
+}
+
+button {
+  background: #FFCECE;
+  background-image: -webkit-linear-gradient(top, #999CFF, #D0D2FF);
+  background-image: -moz-linear-gradient(top, #999CFF, #D0D2FF);
+  background-image: -ms-linear-gradient(top, #999CFF, #D0D2FF);
+  background-image: -o-linear-gradient(top, #999CFF, #D0D2FF);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 16px;
+  padding: 1px 2px 1px 2px;
+  text-decoration: none;
+}
+
+* {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	color: #0a0a0a;
+}
+
+body {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+p {
+	font-size: 0.7em;
+}
+
+li {
+	list-style-type: none;
+}
+
+a:link , a:visited { text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
+
+a img, form, fieldset{
+	background: none;
+	border: none;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-variant: small-caps;
+	color: #af0000;
+}
+
+input { 
+	border: #edede5 solid 1px;
+	height: 16px;
+	background-color: #FFFFFF;
+	font-size: 0.8em;
+	padding: 2px 5px 0 5px;
+	font-style: italic;
+}
+
+input.button {
+	border: #af0000 solid 1px;
+	background: url(/ProjetoColabUFV/imagens/button_gradient.jpg) repeat-x;
+	padding: 0 5px;
+	height: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin-left: 10px;
+	font-style: normal;
+}
+
+.link {
+	display: block;
+	background: url(/ProjetoColabUFV/imagens/ico_link.jpg) no-repeat left;
+	color: #000000;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 0.8em;
+	margin: 10px 0;
+}
+
+
+strong {
+	color: #000000;
+}
+
+em{
+	color: #af0000;
+	font-style: normal;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+
+.clear {
+	clear: both;
+}
+
+/**************************************** HEADER ****************************/
+
+
+
+#header {
+	width: 980px;
+	padding-top: 15px;
+	height: 100px;
+	margin-bottom: 2px;
+}
+
+#header a:active, #header a:hover { text-decoration: none; }
+
+#logo {
+	width: 246px;
+	height: 90px;
+	margin-top: 3px;
+	padding-top: 5px;
+	color: #000000;
+	font-size: 1.6em;
+	border: #edede5 solid 0px;
+	text-align: center;
+}
+
+#logo a {
+	color:#000000;
+}
+
+#logo #slogan {
+	color: #af0000;
+	font-style: italic;
+	font-size: 0.5em;
+}
+
+#img {
+	float: right;
+ 	background: url(/ProjetoColabUFV/imagens/imagemColaborativa.jpg) no-repeat bottom;
+	width: 727px;
+	height: 93px;
+}
+
+#img p {
+	font-variant: small-caps;
+	padding-left: 20px;
+	margin-top: 5px;
+	font-size: 1.1em;
+}
+
+#img p b {
+	color: #FFFFFF;
+}
+
+#img p span {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+#img p#call {
+	margin-top: 8px;
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+
+
+	
+
+/****************************************  HEADER END ****************************/
+
+
+
+/**************************************** MENU ****************************/
+
+
+#menu {
+	width: 980px;
+	height: 30px;
+}
+
+#menu li {
+	float: left;
+	font-size: 0.8em;
+}
+
+#menu li#search {
+	background-color: #F5F5F5;
+	width: 246px;
+	height: 23px;
+	border: #edede5 solid 2px;
+	text-align: center;
+	padding-top: 3px;
+}
+
+#menu li#loggedAs {
+	background-color: #F5F5F5;
+	width: 246px;
+	height: 40px;
+	border: #edede5 solid 2px;
+	text-align: center;
+	padding-top: 3px;
+        font-size: 0.6em;
+        
+}
+
+#menu li.menu_link a:link, #menu li.menu_link a:visited {
+	display: block;
+	background: url(/ProjetoColabUFV/imagens/menu_gradient.jpg) repeat-x;
+	height: 40px;
+	width: 112px;
+	text-align: center;
+	border: #af0000 solid 1px;
+	margin-left: 7px;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	padding-top: 3px;
+}
+
+#menu li.menu_link a:hover, #menu li.menu_link a:active {
+	display: block;
+	height: 40px;
+	width: 110px;
+	text-align: center;
+	border: #edede5 solid 2px;
+	text-align: center;
+	padding-top: 3px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	margin-left: 7px;
+}
+
+#menu li#menu_link_first a:link, #menu li#menu_link_first a:visited {
+	display: block;
+	background: url(/ProjetoColabUFV/imagens/menu_gradient.jpg) repeat-x;
+	height: 40px;
+	width: 113px;
+	text-align: center;
+	border: #af0000 solid 1px;
+	margin-left: 5px;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	padding-top: 3px;
+}
+
+#menu li#menu_link_first a:hover, #menu li#menu_link_first a:active {
+	display: block;
+	height: 40px;
+	width: 110px;
+	text-align: center;
+	border: #edede5 solid 2px;
+	padding-top: 3px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	margin-left: 5px;
+}
+
+
+	
+
+/****************************************  MENU END ****************************/
+
+
+/**************************************** CONTENT ****************************/
+
+
+#content {
+	width: 980px;
+}
+
+#left {
+	float:left;
+	width: 250px;
+}
+
+#left div {
+	margin: 10px 0;
+	
+}
+
+#left p {
+	margin: 10px 10px 10px 30px;
+}
+
+#left p a:hover, #left p a:active {
+	text-decoration: none;
+}
+
+#left .link {
+	margin-left: 30px;
+}
+
+#left form {
+	background-color: #F5F5F5;
+	width: 242px;
+	border: #edede5 solid 2px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#right {
+	float: right;
+	width: 730px;
+	margin: 10px 0;
+}
+
+
+#right img {
+	border: #edede5 solid 2px;
+	float: left;
+	margin-right: 20px;
+}
+
+#welcome {
+	background-color: #F5F5F5;
+        width: 715px;
+        height: 330px; 
+	padding: 100px;
+	border: #000000 solid 4px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        position:static;
+}
+
+#centralize {
+    width: 715px;
+    height: 330px;
+    margin: 10% auto 0;
+    padding-left: 220px;
+}
+
+#welcome h1 {
+	width: 100%;
+}
+
+#welcome p {
+	width: auto!important;
+	width: 95%;
+}
+
+#block_left {
+	float: left;
+	width: 330px;
+	margin: 20px 0 10px 10px;
+}
+
+#block_right {
+	float: right;
+	width: 330px;
+	margin: 20px 0 10px 0;
+}
+
+#block_left p , #block_right p {
+	margin-bottom: 10px;
+}
+#block_left ul {
+	margin-left: 20px;
+}
+
+
+#block_left li , #block_right li {
+	list-style-image: url(/ProjetoColabUFV/imagens/ico_list.jpg);
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+#block_left li a , #block_right li  a {
+	color: #af0000;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 0.8em;
+}
+
+
+#block_left li span {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+#resol {
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	position:fixed;
+	-position:absolute;
+	font-size: 10px;
+	width:230px;
+	top:0px;
+	left:1280px;
+	margin:0 auto;
+	background:#bfc6d9;
+	text-align:center;
+} 
+
+#resol h1 {
+	background:none;
+	font-size: 15px;
+	letter-spacing:3px;
+	padding:0px;
+	margin:0px;
+	border: 0px;
+} 
+
+#resol h2 {
+	font-size:10px;
+	letter-spacing:3px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	background:none;
+}
+
+
+/**************************************** CONTENT END ****************************/
+
+
+/**************************************** FOOTER ****************************/
+
+#footer {
+	border-top: #af0000 solid 5px;
+	width: 980px;
+	font-size: 0.6em;
+	padding-top: 10px;
+	text-align:center;
+	-padding-bottom:50px;
+	
+}
+
+#footer_terms {
+	
+width: 100%; bottom: 0px; left: 0px; position: absolute; height: 40px; 
+}
+
+#footer_terms h1 {
+	padding: 60px 0px 0px 0px; color: #c6c6c6;
+	text-align:right;
+	border:0px;
+	font-variant:normal;font-size: 0.8em;font-weight: normal;
+	text-decoration:none;background: none;
+}
+
+#footer_terms a  { text-decoration: underline;}
+
+#footer_terms strong,#footer_terms a {
+	color: #c6c6c6;
+	font-weight: normal;
+	background: none;
+}
+
+#holder {
+	min-height: 100%; position: relative; margin:0 auto;
+}
+
+/**************************************** FOOTER END ***************************/
+    
+
+
+#welcome centralize {
+    width: 715px;
+    height: 330px;
+    margin: 10% auto 0;
+    padding-left: 220px;
+}
+
+//tirar resize dos textArea
+textarea {
+    resize: none;
+}

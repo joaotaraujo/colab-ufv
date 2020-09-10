@@ -1,0 +1,57 @@
+CREATE DATABASE  IF NOT EXISTS `mydatabase` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `mydatabase`;
+-- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: mydatabase
+-- ------------------------------------------------------
+-- Server version	5.6.21-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `papel`
+--
+
+DROP TABLE IF EXISTS `papel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `papel` (
+  `id` int(11) NOT NULL,
+  `idProjeto` int(11) DEFAULT NULL,
+  `funcao` varchar(45) DEFAULT NULL,
+  `descricao` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_idProjeto_idx` (`idProjeto`),
+  CONSTRAINT `FK_idProjetoiidx` FOREIGN KEY (`idProjeto`) REFERENCES `projeto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `papel`
+--
+
+LOCK TABLES `papel` WRITE;
+/*!40000 ALTER TABLE `papel` DISABLE KEYS */;
+INSERT INTO `papel` VALUES (0,0,'Gerente','Gerencia o projeto'),(1,0,'Projetista','Elaboração das interfaces do sistema'),(2,0,'Administrador do banco','Responsável pelo banco de dados'),(3,0,'Desenvolvedor','Desenvolvedores de código fonte'),(4,0,'Gerente de configuração de software','Responsável por gerenciar as ferramentas de controle de versão'),(7,0,'Analista','Responsável por gerenciar o banco de dados ou o versionamento do sistema'),(8,0,'Testador',NULL);
+/*!40000 ALTER TABLE `papel` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-11-28 17:40:35
