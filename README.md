@@ -1,5 +1,5 @@
-# colabufv
-Ambiente colaborativo para apoio em projetos acadêmicos, desenvolvido em java à partir da tecnologia JSP.
+# Colab-UFV
+Collaborative environment to support academic projects, developed in java using JSP technology.
 
 About
 -----
