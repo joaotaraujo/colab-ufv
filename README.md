@@ -10,12 +10,6 @@ As a tool to support education, Colab-UFV favors learning by experimentation, en
 The environment also includes analyzing the performance of team members through measurements quantitative data on collaborative data.
 
 
-UML Diagram
------------
-
-![GitHub Logo](/images/uml.png)
-
-
 
 Screenshots
 -----------
@@ -30,6 +24,13 @@ Screenshots
 <b>The system</b>
 
 ![GitHub Logo](/images/arctech.png)
+
+
+
+UML Diagram
+-----------
+
+![GitHub Logo](/images/uml.png)
 
 
 
