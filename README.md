@@ -21,12 +21,37 @@ Screenshots
 -----------
 
 
-Initial screen
+<b>Model based</b>
+
+![GitHub Logo](/images/3c.png)
+
+
+
+<b>The system</b>
+
+![GitHub Logo](/images/arctech.png)
+
+
+
+<b>Functions</b>
+
+![GitHub Logo](/images/uml-caseuse.png)
+
+
+
+<b>Initial screen</b>
 
 ![GitHub Logo](/images/telaInicial.png)
 
 
 
-User Reports
+<b>User Reports</b>
 
 ![GitHub Logo](/images/relatorioFinal.png)
+
+
+
+
+
+
+
