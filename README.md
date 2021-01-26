@@ -1,5 +1,5 @@
 # Colab-UFV
-Collaborative environment to support academic projects, developed in java using JSP technology.
+Collaborative environment to support academic projects, developed in java using JSP technology ![Check-out!](https://www.br-ie.org/pub/index.php/sbie/article/view/6830).
 
 About
 -----
